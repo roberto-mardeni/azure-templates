@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "mysfcluster"
+        },
+        "clusterLocation": {
+            "value": "eastus"
+        },
+        "computeLocation": {
+            "value": "eastus"
+        },
+        "adminUserName": {
+            "value": "sysadmin"
+        },
+        "adminPassword": {
+            "value": "Password$123"
+        },
+        "nicName": {
+            "value": "mysfcluster-nic"
+        },
+        "supportLogStorageAccountName": {
+            "value": "mysfcluster-sa"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/{SUBSCRIPTION ID}/resourceGroups/{RESOURCE GROUP NAME}/providers/Microsoft.KeyVault/vaults/{VAULT NAME}"
+        },
+        "certificateUrlValue": {
+            "value": "https://{VAULT NAME}.vault.azure.net/secrets/builds/###"
+        },
+        "certificateThumbprint": {
+            "value": "###"
+        },
+        "vmImageSku": {
+            "value": "2016-Datacenter-with-Containers"
+        },
+        "vmImageOffer": {
+            "value": "WindowsServer"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        },
+        "nt0reverseProxyEndpointPort": {
+            "value": 19081
+        },
+        "subnet0Name": {
+            "value": "Subnet1"
+        },
+        "existingVNetRGName": {
+            "value": "Network"
+        },
+        "existingVNetName": {
+            "value": "vnet"
+        },
+        "lbPrivateIPAddress": {
+            "value": "10.0.0.100"
+        }
+    }
+}
